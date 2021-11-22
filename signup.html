@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML CSS Application Form</title>
+    <link rel="stylesheet" href="css/signupstyle.css">
+  </head>
+  <body style="background-image:url(images/Sea.jpg);">
+    <form class="signup-form" action="" method="">
+      <div class="form-header">
+        <h1>Account Creation:</h1>
+      </div>
+      <div class="form-body">
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="firstname" class="label-title">First name*</label>
+            <input type="text" id="firstname" class="form-input" placeholder="enter your first name"  pattern="[A-Za-z]{1,32}"required="required" />
+          </div>
+          
+         
+         
+          <div class="form-group right">
+            <label for="lastname" class="label-title">Last name</label><br>
+            <input type="text" id="lastname"  class="form-input" placeholder="enter your last name" pattern="[A-Za-z]{1,6}"/>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="email" class="label-title">Email*</label>
+          <input type="email" id="email" class="form-input" placeholder="enter your email" required="required">
+        </div>
+        
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="password" class="label-title">Password *</label>
+            <input type="password" id="password" class="form-input" placeholder="enter your password" pattern="[A-Za-z]{6}" required="required">
+          </div>
+          <div class="form-group right">
+            <label for="Phone Number" class="label-title">Phone Number *</label>
+            <input type="tel" id="Phone Number" name="Phone Number" class="form-input" palceholder="PhoneNumber" pattern="[7-9]{1}[0-9]{9}" title="Phone number with 7-9 and remaing 9 digit with 0-9"  required="required">
+          </div>
+        </div>
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label class="label-title">Gender:</label>
+            <div class="input-group">
+              <label for="male"><input type="radio" name="gender" value="male" id="male"> Male</label><br>
+              <label for="female"><input type="radio" name="gender" value="female" id="female"> Female</label>
+            </div>
+          </div>
+          <div class="form-group right">
+            <label for="experience" class="label-title">Age</label>
+            <input type="number" min="18" max="80"  value="18" class="form-input">
+          </div>
+        </div>
+        <div class="horizontal-group">
+          <div class="form-group right" >
+            <label class="label-title">Education Level</label>
+            <select class="form-input" id="level" >
+              <option value="ug">UG</option>
+              <option value="pg">PG</option>
+              <option value="others">Other</option>
+            </select>
+          </div>
+          <div class="form-group right">
+            <label for="experience" class="label-title">Overall Experience:</label>
+            <input type="range" min="0" max="20" step="1" value="0" id="experience" class="form-input" onChange="change();" style="height:28px;width:78%;padding:0;">
+            <span id="range-label">20years</span>
+          </div>
+        </div>
+        <div class="horizontal-group">
+          <div class="form-group left" >
+            <label for="choose-file" class="label-title">Upload Profile</label>
+            <input type="file" id="choose-file" size="80">
+          </div>
+          <div class="form-group right">
+            <label class="label-title">Technologies Known</label>
+            <div >
+              <label><input type="checkbox" value="Web">Web</label>
+              <br>
+              <label><input type="checkbox" value="iOS">iOS</label>
+              <br>
+              <label><input type="checkbox" value="Andriod">Android</label>
+              <br>
+              <label><input type="checkbox" value="Game">Gaming</label>
+              <br>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="form-group">
+          <br>
+          <label for="choose-file" class="label-title" align:c>Bio</label>
+          <br><br>
+          <textarea class="form-input" rows="3" cols="30" style="height:auto"></textarea>
+        </div>
+      </div>
+      <div class="form-footer">
+        <img src="images/Sea.jpg" width="20%" height="20%" align="left">
+        <label><input type="checkbox" value=" "></label>
+        <span>I here by declare all the details above stated are true to create an account for me!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <button type="submit" class="btn">CREATE ME</button>
+      </div>
+    </form>
+  </body>
+</html>

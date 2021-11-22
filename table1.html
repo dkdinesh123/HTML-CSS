@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>My table css page</title>
+    </head>
+    <style>
+        .table1
+        {
+            float:right;
+            text-align:"left";
+            margin-left: 300px;
+            border:5px double;
+            border-collapse: collapse;
+            background: orange;
+        }
+        tr:nth-of-type(odd)
+        {
+            background: blanchedalmond;
+        }
+        .table2
+        {
+            float:left;
+            margin-right:200px;
+            border:1px solid;
+            border-collapse: separate;
+            padding: 10px 20px;
+            border-spacing: 10px;
+            background: magenta;
+        }
+        tr
+        {
+            border:1 px dotted rgba(115,225,225);
+            border-collapse: collapse;
+
+        }
+        thead,
+        tfoot{
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+    <body>
+        <table class="table1" border="1">
+            <thead>
+                <tr>
+                    <th rowspan="2">Name</th>
+                    <th colspan="2">Name of Vehicle</th>
+                </tr>
+                <tr>
+                    <th>Renault</th>
+                    <th>Nissan</th>
+ 
+                </tr>
+            </thead>
+            <tr>
+                <td>Prakash</td>
+                <td>Duster</td>
+                <td>Leaf</td>
+      
+            </tr>
+            <tr>
+                <td>Siddharth</td>
+                <td>Triber</td>
+                <td>Terrano</td>
+            </tr>
+        </table>
+
+        <table class="table2" border="1">
+            <tr>
+                <th>Name</th>
+                <th>Vehicle</th>
+            </tr>
+            <tr>
+                <td>Dhoni</td>
+                <td>BMW</td>
+            </tr>
+            <tr>
+                <td>Rahul</td>
+                <td>Audi</td>
+            </tr>
+            <tfoot>
+                <tr><td colspan="2">2 members bought their luxury car</td></tr>
+            </tfoot>
+        </table>
+
+    </body>
+</html>

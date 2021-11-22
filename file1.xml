@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<student>
+ <edu>
+	<name>Dinesh>></name>
+	<rollno>17be2021</rollno>
+</edu>
+<personal>
+	<name>Karthik</name>
+	<address>cbe</address>
+</personal>
+</student>

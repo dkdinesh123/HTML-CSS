@@ -1,0 +1,146 @@
+* {
+  margin: 0px 5px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#size {
+  position: absolute;
+
+  top: 60%;
+  left: 39%;
+}
+
+.container {
+  height: 100vh;
+}
+.head {
+  height: 10%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+  font-size: 4vw;
+}
+.body
+{
+  background-color: blueviolet;
+}
+
+.header_menu {
+  display: flex;
+  flex-direction: row;
+  font-size: 2.5vw;
+  gap: 15px;
+}
+
+.main {
+  height: 80%;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.main_img {
+  background-image: url("./images/triber.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  width: 50%;
+}
+
+.main_text {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main_txt1 {
+  font-size: 5vw;
+}
+
+.main_txt2,
+.main_txt3,
+.main_txt4 {
+  font-size: 2.5vw;
+}
+
+.footer {
+  height: 10%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+  margin-right: 10%;
+}
+
+img {
+  width: 5.3vw;
+}
+
+@media (max-width: 650px) {
+  .head {
+    justify-content: center;
+  }
+@media(max-width:700px)
+{
+  
+  .body
+  {
+    background-color: red;
+  }
+}
+  .header_logo {
+    font-size: 40px;
+  }
+
+  .header_menu {
+    display: none;
+  }
+
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 100px;
+    
+  }
+
+  .main_img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-size: 100%;
+    background-position: center;
+  }
+  .main_text {
+      width: 100%;
+  }
+
+  .main_txt1{
+      display: none;
+  }
+
+  .main_txt3,.main_txt2,.main_txt4{
+      font-size: 30px;
+      color: rgb(235, 138, 28);
+  }
+
+  .footer {
+    justify-content: center;
+    margin: 0;
+  }
+
+  img {
+    width: 45px;
+    height: 45px;
+  }
+}

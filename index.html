@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first page</title>
+</head>
+<style>
+    
+    #content{
+        color: rgb(50, 236, 25);
+        text-indent:6vmax;
+        line-height: 3vmax;
+        letter-spacing: 0px;
+        list-style-position:outside;
+        text-decoration-style:solid;
+        font-size:3vmax;
+        text-align:right;
+        text-transform: uppercase;
+        text-shadow: 10em;
+        list-style: circle;
+    }
+   
+    abbr{
+        text-decoration-skip-ink:unset;
+        text-decoration-color: lightcoral;
+        font-weight: bolder;
+    }
+  
+    p
+   {
+        font-size:larger;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        font-display:initial;
+        font-style:italic;
+        font-variant:unset;
+        font-optical-sizing:initial;
+    }
+
+    address
+    {
+        border: 2px solid red;
+        line-height: 100%;
+       border-width: thick;
+       border-bottom-color: magenta;
+       border-right-color: mediumblue;
+       border-bottom-style: dashed;
+       border-bottom-width: thick;
+       border-left-width: magenta;
+       border-spacing: .100m;
+       
+
+    }
+   
+    img
+    {
+        border-left: 5px dotted rgb(50, 236, 25);
+        border-top: 6px dotted rgb(253, 15, 126);
+    }
+
+   a{
+       border-bottom: 2px solid blue;
+   }
+
+    a[href]:hover
+    {
+        font-weight: bold;
+        content :icon;
+        list-style:circle;
+    }
+    
+    </style>
+<body>
+
+    <a href="images/Sea.jpg">Hi Sea......
+        <img src="images/Sea.jpg" width="30" height="30">
+    </a> <br><br><br><br>
+    
+    
+    <abbr title="Html">Hypertext Markup language
+    
+    </abbr><br><br><br><br>
+    <address>
+        <pre>
+            38,mountain view,maniyakaranpalayam<br>
+            near krishnaraja nagar,Coimbatore-641022</pre>
+        </address>
+        <br>
+ 
+    <img src="images/Sea.jpg" width="300" height="300" #clickmap="clickmap">
+    <map name="clickmap">
+        <area shape="circle" coordinates="350,300,100" href="www.google.com">
+    </map> 
+    <p>India Won the world cup in 2007 under the captaincy of Mahindra Singh Dhoni!! </p>
+    <article id='content'>
+        Hi.. this is Dinesh 
+    </article>
+    <aside id='content'>
+        Hello this is sachin aside.
+        <li>sachin</li>
+        <li>Dhoni</li>
+    </aside>
+   
+</body>
+</html>
+

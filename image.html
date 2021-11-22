@@ -1,0 +1,41 @@
+<style>
+    .box {
+    width: 100px;
+    height:100px;
+    border: 5px solid red;
+  
+  }
+  img{
+      width:100%;
+      height:100%;
+  }
+  .container1{
+      object-fit: fill;
+  }
+  .container2{
+      object-fit: fill;
+  }
+  .container {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: .5rem;
+   }
+   
+   .container > div{
+    background-color: aquamarine;
+    border-radius: .5rem;
+   }
+
+</style>
+<div class="container">
+    <div class="box"><img src="images/Sea.jpg" alt="Animal" class="container1"></div>
+    <div>Hello Dinesh! How Are You??</div>
+    <div class="box"><img src="images/fs.png" alt="technology" class="container2"></div>
+     <div>Yes I am Fine!</div>
+     <audio controls>  
+        <source src="audio/crackers.mp3" type="audio/ogg">  
+      Your browser does not support the html audio tag.  
+      </audio>  
+    </a>
+  </div>
